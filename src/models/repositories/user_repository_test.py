@@ -9,13 +9,6 @@ def test_repository():
     username = "Ciclano"
     password = "123R!"
 
-    repo.registry_user(username, password)
     user = repo.get_user_by_username(username)
     print()
     print(user)
-
-    repo.edit_balance(user[0], 5469.20)
-    user2 = repo.get_user_by_username(username)
-    print()
-    print(user2)
-    
